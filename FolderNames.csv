@@ -1,19 +1,21 @@
-﻿Name;Type
-1. Legal;Folder
-a. Order of the Council of State;Subfolder
-2. Project management;Folder
-a. Project plan;Subfolder
-b. Description;Subfolder
-c. Project objectives;Subfolder
-d. Legal aspects;Subfolder
-e. Planning;Subfolder
-f. Test sets;Subfolder
-g. Success indicators;Subfolder
-3. Communication;Folder
-4. Budget;Folder
-5. Premises - Infrastructure;Folder
-a. IT network;Subfolder
-b. Computers;Subfolder
-c. Operating system;Subfolder
-d. Call center;Subfolder
-e. Telephony;Subfolder
+﻿Name;Level
+1. Legal;1
+a. Order of the Council of State;2
+2. Project management;1
+a. Project plan;2
+b. Description;2
+c. Project objectives;2
+d. Legal aspects;2
+e. Planning;2
+i. Weekly meetings;3
+ii. Monthly reports;3
+f. Test sets;2
+g. Success indicators;2
+3. Communication;1
+4. Budget;1
+5. Premises - Infrastructure;1
+a. IT network;2
+b. Computers;2
+c. Operating system;2
+d. Call center;2
+e. Telephony;2
