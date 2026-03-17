@@ -6,9 +6,9 @@
   - [About](#about)
   - [For whom this script is intended ?](#for-whom-this-script-is-intended-)
   - [How to use](#how-to-use)
-    - [1: Download the latest version](#1-download-the-latest-version)
-    - [2: Define your folders and subfolders name](#2-define-your-folders-and-subfolders-name)
-    - [3: Run the script](#3-run-the-script)
+    - [1. Download the latest version](#1-download-the-latest-version)
+    - [2. Define your folders and subfolders name](#2-define-your-folders-and-subfolders-name)
+    - [3. Run the script](#3-run-the-script)
 
 ## About
 
@@ -22,16 +22,20 @@ This script allows the quick creation of the same folder structures, useful, for
 
 ## How to use
 
-### 1: Download the latest version
+### 1. Download the latest version
 
 You can download the latest version on the [releases page](https://github.com/Liozon/powershell-folders-and-subfolders-creator/releases "Releases page")
 
-### 2: Define your folders and subfolders name
+### 2. Define your folders and subfolders name
 
 Simply edit the `FolderNames.csv` file. You'll find two columns:
 
-1. Column `Table`: use this column to name your folder.
-2. Column `Type`: specify if the current line should be either a folder or a subfolder (of the folder specified on top of the subfolder)
+1. Column `Name`: use this column to name your folder.
+2. Column `Level`: specify if the current line should be either a folder or a subfolder (of the folder specified on top of the subfolder)
+
+The script will use the level to build the sctructure of the folders:
+
+![Folders structure](./Images/csv_level_logic.svg "Folders structure")
 
 **Reminder**: you **can't** use the following caracters to name your folder:
 
@@ -59,17 +63,19 @@ The CSV file contains random folders name if you want to test the script, with t
 ```markdown
 1. Legal
   a. Order of the Council of State
-2. Project management
+1. Project management
   a. Project plan
   b. Description
   c. Project objectives
   d. Legal aspects
   e. Planning
+    i. Weekly meetings
+    ii. Monthly reports
   f. Test sets
   g. Success indicators
-3. Communication
-4. Budget
-5. Premises - Infrastructure
+1. Communication
+2. Budget
+3. Premises - Infrastructure
   a. IT network
   b. Computers
   c. Operating system
@@ -77,8 +83,8 @@ The CSV file contains random folders name if you want to test the script, with t
   e. Telephony
 ```
 
-### 3: Run the script
+### 3. Run the script
 
 To run the script, simply double-clic on `Run script.bat`. The BAT file will start PowerShell and the script.
 You'll be prompted to confirm the folders creation, no folders will be created before you confirm the script:
-![Prompt](./Images/Confirm%20prompt.jpg "Prompt")
+![Prompt](./Images/Confirm%20prompt%20with%20folders%20structure.png "Prompt")
